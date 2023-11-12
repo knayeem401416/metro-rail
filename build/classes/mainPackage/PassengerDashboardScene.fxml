@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="passengerDashboardBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPackage.PassengerDashboardSceneController">
+   <left>
+      <AnchorPane prefHeight="336.0" prefWidth="200.0" style="-fx-background-color: #0F9FB4;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="25.0" layoutY="31.0" mnemonicParsing="false" onAction="#passViewTrainInfoButtonOnClick" prefHeight="25.0" prefWidth="147.0" text="View Train Information" wrapText="true" />
+            <Button layoutX="25.0" layoutY="87.0" mnemonicParsing="false" onAction="#passCheckVacantSeatButtonOnClick" prefHeight="25.0" prefWidth="147.0" text="Check Vacant Seat" />
+            <Button layoutX="25.0" layoutY="145.0" mnemonicParsing="false" onAction="#passPurchaseTicketButtonOnClick" prefHeight="25.0" prefWidth="147.0" text="Purchase Ticket" />
+            <Button layoutX="25.0" layoutY="203.0" mnemonicParsing="false" onAction="#passVerifyTicketButtonOnClick" prefHeight="25.0" prefWidth="147.0" text="Verify Ticket" />
+            <Button layoutX="25.0" layoutY="260.0" mnemonicParsing="false" onAction="#passViewPurchasingHistoryButtonOnClick" prefHeight="25.0" prefWidth="147.0" text="View Purchasing History" />
+            <Button layoutX="25.0" layoutY="319.0" mnemonicParsing="false" onAction="#passMonthlyRapidCardButtonOnClick" prefHeight="25.0" prefWidth="147.0" text="Monthly Rapid Card" />
+            <Button layoutX="25.0" layoutY="374.0" mnemonicParsing="false" onAction="#passHelpAndSafetyButtonOnClick" prefHeight="25.0" prefWidth="147.0" text="Help and Safety" />
+            <Button layoutX="24.0" layoutY="429.0" mnemonicParsing="false" onAction="#passSendFeedbackButtonOnClick" prefHeight="25.0" prefWidth="147.0" text="Send Feedback" />
+            <Line endX="-14.0" endY="342.0" layoutX="214.0" layoutY="117.0" startX="-14.0" startY="-87.0" stroke="#0b0a4d" strokeWidth="5.0" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="315.0" prefWidth="562.0" style="-fx-background-color: #0F9FB4;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="155.0" fitWidth="403.0" layoutX="34.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@istockphoto-1131883372-612x612.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="34.0" layoutY="97.0" prefHeight="62.0" prefWidth="401.0" text="Welcome Passenger" textFill="#140d75" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="42.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="passTermsAndConditionsTextArea" editable="false" layoutX="457.0" layoutY="105.0" prefHeight="324.0" prefWidth="248.0" />
+            <Label layoutX="457.0" layoutY="66.0" text="Terms &amp; Conditions:">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #0F9FB4;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="833.0" layoutY="-1.0" mnemonicParsing="false" onAction="#logOutButtonOnClick" text="Log Out">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Label fx:id="passIdLabel" layoutX="282.0" layoutY="-3.0" prefHeight="35.0" prefWidth="322.0" text="Logged in as " textFill="#1c15a4">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="0.0" prefWidth="724.0" style="-fx-background-color: #64ffda;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="79.0" fitWidth="110.0" layoutX="263.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@8915911.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="462.0" layoutY="7.0" prefHeight="62.0" prefWidth="302.0" text="Dhaka Metro Rail " textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

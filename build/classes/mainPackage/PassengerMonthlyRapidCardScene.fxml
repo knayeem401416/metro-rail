@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="727.0" style="-fx-background-color: #0F9FB4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPackage.PassengerMonthlyRapidCardSceneController">
+   <children>
+      <Label layoutX="270.0" layoutY="29.0" text="Monthly Rapid Card" textFill="#180b5e" underline="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="93.0" text="MRC ID:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="141.0" text="Number of Month:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idMRCTextField" layoutX="226.0" layoutY="94.0" />
+      <ComboBox fx:id="noOfMonthCB" layoutX="226.0" layoutY="142.0" prefWidth="150.0" />
+      <Label fx:id="totalPriceLabel" layoutX="405.0" layoutY="200.0" prefHeight="32.0" prefWidth="293.0" text="Total Price: ">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="mrcInfoTextArea" editable="false" layoutX="405.0" layoutY="90.0" prefHeight="93.0" prefWidth="293.0" text="MRT ID and Info" />
+      <Label layoutX="57.0" layoutY="265.0" text="Payment Method:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="paymentMethodCB" layoutX="215.0" layoutY="266.0" prefWidth="150.0" />
+      <Label layoutX="56.0" layoutY="320.0" text="Payment Amount:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="paymentAmountTextField" layoutX="216.0" layoutY="321.0" />
+      <Button layoutX="464.0" layoutY="279.0" mnemonicParsing="false" onAction="#paymentButtonOnClick" text="Payment">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="57.0" layoutY="361.0" mnemonicParsing="false" onAction="#returnHomeButtonOnClick" text="Return Home" />
+      <Button layoutX="189.0" layoutY="196.0" mnemonicParsing="false" onAction="#rechargeMRCButtonOnClick" prefHeight="36.0" prefWidth="87.0" text="Recharge">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Line endX="537.0" layoutX="158.0" layoutY="251.0" startX="-100.0" stroke="#121661" strokeWidth="5.0" />
+      <Line endX="32.0" endY="160.0" layoutX="358.0" layoutY="81.0" startX="32.0" startY="9.0" stroke="#121661" strokeWidth="5.0" />
+   </children>
+</AnchorPane>

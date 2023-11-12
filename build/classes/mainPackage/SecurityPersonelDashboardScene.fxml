@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="securityPersonelDashboardBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="1026.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPackage.SecurityPersonelDashboardSceneController">
+   <top>
+      <AnchorPane prefHeight="53.0" prefWidth="672.0" style="-fx-background-color: #64ffda;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="79.0" fitWidth="110.0" layoutX="262.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@8915911.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="465.0" layoutY="3.0" prefHeight="62.0" prefWidth="302.0" text="Dhaka Metro Rail " textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="297.0" prefWidth="204.0" style="-fx-background-color: #0F9FB4;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="27.0" layoutY="203.0" mnemonicParsing="false" onAction="#securityViewCCTVAndActionButtonOnClick" prefHeight="25.0" prefWidth="147.0" text="View CCTV &amp; Action" wrapText="true" />
+            <Button layoutX="27.0" layoutY="431.0" mnemonicParsing="false" onAction="#securityRulesAndRegulationsButtonOnClick" prefHeight="25.0" prefWidth="147.0" text="Set Rules &amp; Regulations" />
+            <Button layoutX="27.0" layoutY="143.0" mnemonicParsing="false" onAction="#securityEmergencyResponseButtonOnClick" prefHeight="25.0" prefWidth="147.0" text="Emergency Response" />
+            <Button layoutX="27.0" layoutY="261.0" mnemonicParsing="false" onAction="#securityContactPoliceStationButtonOnClick" prefHeight="25.0" prefWidth="147.0" text="Contact Police Station" />
+            <Button layoutX="27.0" layoutY="86.0" mnemonicParsing="false" onAction="#securityVerifyVisitorButtonOnClick" prefHeight="25.0" prefWidth="147.0" text="Verify Visitor" />
+            <Button layoutX="27.0" layoutY="319.0" mnemonicParsing="false" onAction="#securityViewContactHistoryButtonOnClick" prefHeight="25.0" prefWidth="147.0" text="View Contact History" />
+            <Button layoutX="27.0" layoutY="29.0" mnemonicParsing="false" onAction="#securityViewDailyBaseWorkerButtonOnClick" prefHeight="25.0" prefWidth="147.0" text="View Daily Base Worker" />
+            <Button layoutX="27.0" layoutY="376.0" mnemonicParsing="false" onAction="#securityReplaceSecurityDeviceButtonOnClick" prefHeight="25.0" prefWidth="147.0" text="Replace Security Device" />
+            <Line endX="-19.0" endY="398.0" layoutX="220.0" layoutY="62.0" startX="-19.0" startY="-35.0" stroke="#121b5e" strokeWidth="5.0" />
+         </children>
+      </AnchorPane>
+   </left>
+   <bottom>
+      <AnchorPane prefHeight="46.0" prefWidth="600.0" style="-fx-background-color: #0F9FB4;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="912.0" layoutY="-1.0" mnemonicParsing="false" onAction="#logOutButtonOnClick" text="Log Out">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Label fx:id="securityIdLabel" layoutX="322.0" prefHeight="32.0" prefWidth="328.0" text="Logged in as " textFill="#121b5e">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="483.0" prefWidth="834.0" style="-fx-background-color: #0F9FB4;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="140.0" layoutY="11.0" text="Welcome Security Personnel" textFill="#121b5e">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="securityTermsAndConditionsTextArea" editable="false" layoutX="95.0" layoutY="141.0" prefHeight="293.0" prefWidth="360.0" text="See Terms &amp; Conditions Here" />
+            <ImageView fitHeight="43.0" fitWidth="44.0" layoutX="628.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sp.jpeg" />
+               </image>
+            </ImageView>
+            <TextArea fx:id="securityNoticeTextArea" editable="false" layoutX="537.0" layoutY="141.0" prefHeight="293.0" prefWidth="243.0" text="Notice" />
+            <Label layoutX="537.0" layoutY="85.0" text="Notice:" textFill="#121b5e">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="95.0" layoutY="85.0" text="Terms &amp; Conditions:" textFill="#121b5e">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

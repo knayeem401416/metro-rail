@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="338.0" prefWidth="600.0" style="-fx-background-color: #0F9FB4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPackage.SecurityPersonelVerifyVisitorSceneController">
+   <children>
+      <Label layoutX="181.0" layoutY="38.0" text="Visitor Verification" textFill="#281475" underline="true">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="98.0" text="Visitor ID:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="visitorIdTextField" layoutX="186.0" layoutY="99.0" prefHeight="25.0" prefWidth="114.0" />
+      <Button layoutX="138.0" layoutY="227.0" mnemonicParsing="false" onAction="#verifyVisitorButtonOnClick" text="Verify">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="verifyVisitorInfoTextArea" editable="false" layoutX="333.0" layoutY="96.0" prefHeight="175.0" prefWidth="226.0" text="Verify Visitor Info" />
+      <Button layoutX="52.0" layoutY="279.0" mnemonicParsing="false" onAction="#returnHomeButtonOnClick" text="Return Home" />
+      <Label layoutX="52.0" layoutY="141.0" text="Visitor Name:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="visitorNameTextField" layoutX="186.0" layoutY="142.0" prefHeight="25.0" prefWidth="114.0" />
+      <Label layoutX="52.0" layoutY="187.0" text="Phone Number:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="phoneNumberTextField" layoutX="186.0" layoutY="188.0" prefHeight="25.0" prefWidth="114.0" />
+      <Line endX="8.0" endY="-182.0" layoutX="307.0" layoutY="279.0" startX="8.0" startY="-8.0" stroke="#190e61" strokeWidth="5.0" />
+   </children>
+</AnchorPane>

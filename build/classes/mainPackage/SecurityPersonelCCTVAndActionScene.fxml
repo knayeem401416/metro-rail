@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="428.0" prefWidth="626.0" style="-fx-background-color: #0F9FB4;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainPackage.SecurityPersonelCCTVAndActionSceneController">
+   <children>
+      <Label layoutX="216.0" layoutY="35.0" text="CCTV &amp;Action" textFill="#121b5e">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="89.0" text="CCTV Number:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="124.0" text="Crime Type">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="156.0" text="Action Description:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cctvNoCB" layoutX="184.0" layoutY="89.0" prefHeight="25.0" prefWidth="94.0" />
+      <ComboBox fx:id="crimeTypeCB" layoutX="184.0" layoutY="124.0" prefHeight="25.0" prefWidth="94.0" />
+      <TextArea fx:id="actionDescriptionTextArea" layoutX="56.0" layoutY="190.0" prefHeight="135.0" prefWidth="225.0" />
+      <PieChart fx:id="crimeTypePieChart" layoutX="313.0" layoutY="89.0" prefHeight="240.0" prefWidth="273.0" />
+      <Button layoutX="216.0" layoutY="336.0" mnemonicParsing="false" onAction="#SaveButtonOnClick" prefHeight="30.0" prefWidth="62.0" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="56.0" layoutY="374.0" mnemonicParsing="false" onAction="#returnHomeButtonOnClick" text="Return Home" />
+      <Line endX="3.0" endY="297.0" layoutX="292.0" layoutY="71.0" startX="3.0" startY="19.0" stroke="#1f1972" strokeWidth="5.0" />
+      <Button layoutX="401.0" layoutY="339.0" mnemonicParsing="false" onAction="#generatePieChartButtonOnClick" text="Generate Pie Chart" />
+   </children>
+</AnchorPane>
